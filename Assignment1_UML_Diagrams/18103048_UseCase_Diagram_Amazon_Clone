@@ -1,0 +1,51 @@
+@startuml
+left to right direction
+Actor Customer as C
+Actor "Returning User" as N
+Actor "New User" as R
+Actor "<<service>>\nAuthentication" as A
+Actor "Identity provider" as I
+Actor "Credit payment service" as S
+
+C -- N
+C -- R
+
+skinparam usecase {
+BackgroundColor LightBlue
+BorderColor DarkSlateGray
+}
+
+Rectangle "Online Shopping" {
+    usecase "Manage cart" as UC1
+    usecase "Delete items in cart" as UC2
+    usecase "Edit item in cart" as UC3
+    usecase "Add item to cart" as UC4
+    usecase "View items" as UC5
+    usecase "Make purchase" as UC6
+    usecase "Checkout" as UC7
+    usecase "Client register" as UC8
+    usecase "Client register" as UC9
+
+
+
+UC1 ...> UC2 
+UC1 ...> UC3 
+UC1 ...> UC4
+N -- UC1
+N -- UC5
+N -- UC6
+R ------- UC5
+R -- UC8
+UC9 ---- A
+UC5 ---- A
+UC5 ---- I
+UC6 ---- I
+UC7 ---- I
+UC7 ---- S
+
+UC4 ..> UC5 : <<extends>>
+UC6 ..> UC5 : <<includes>>
+UC6 ..> UC7 : <<includes>>
+}
+
+@enduml

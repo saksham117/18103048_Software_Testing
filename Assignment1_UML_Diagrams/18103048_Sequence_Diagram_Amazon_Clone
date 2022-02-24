@@ -1,0 +1,29 @@
+@startuml
+skinparam sequenceMessageAlign right
+skinparam ParticipantPadding 50
+
+Actor Customer
+
+activate Customer #RoyalBlue
+activate Account #RoyalBlue
+Customer -> Account : Log in
+Account -[#red]-> Customer : Authorization
+|||
+activate "Product Catalog" #RoyalBlue
+Customer -> "Product Catalog" : Search for Products
+"Product Catalog" -[#red]-> Customer : Search Result (product info.)
+|||
+Customer -> "Product Catalog" : Add to Cart
+"Product Catalog" -[#red]-> Customer : Confirmation
+|||
+activate Billing #RoyalBlue
+Billing -[#red]-> Customer : Billing info.
+Customer -> Billing : Payments
+
+Billing -[#red]-> Customer : Payment Confirmation
+
+deactivate Customer
+deactivate Account
+deactivate "Product Catalog"
+deactivate Billing
+@enduml
