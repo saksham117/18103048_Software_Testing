@@ -1,14 +1,12 @@
 # 18103048_Software_Testing
 
 
-We are here to make your digital classroom experience as seamless as possible. Our tools make it simple to manage and submit your assignments, view and share study material and resources, keep a track of your pending tasks and help you make most of your remote learning experience.
+# Amazon-Clone
+My attempt towards developing a full stack clone of the Amazon App using React.js, with the site being deployed using FireBase and using FireStore as the database.
 
-Here is the link to the website: [Digital Board](https://digitalboard.herokuapp.com/)
+Implemented complete payment functionality using Stripe.js and handled authentication using Google Authentication.
 
-Here is the link to the demo video : [Digital Board](https://youtu.be/YJrfbwm3uV0)
-
-
-**Note:** As it's uploaded on a free tier service, the initial get request to the website might be slow. The subsequent requests will be pretty fast!   
+[Check out the site over here](https://clone-6f35b.web.app/)   
 
 
 ## Contents ##
@@ -16,10 +14,6 @@ Here is the link to the demo video : [Digital Board](https://youtu.be/YJrfbwm3uV
 - [Features](#features)
 - [Key Points](#key-points)
 - [Walkthrough](#walkthrough)
-  - [Student](#student)
-  - [Teacher](#teacher) 
-- [Getting Started](#getting-started)
-- [Final Comments](#final-comments)
 - [Bug Reporting](#bug)
 - [Feature Request](#feature-request)
 
@@ -57,140 +51,39 @@ Here is the link to the demo video : [Digital Board](https://youtu.be/YJrfbwm3uV
 So lets take a look at our application.
 
 ### Landing Page
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/home_page.png?raw=true)
-
-### About Us
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/about%20us.png?raw=true)
-
-Now click on Login with Google so that you can login into the application using your email id.
-
-### Logging In
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/sign%20in.png?raw=true)
-
-Depending on whether you are a student or you are a teacher, you get different options and tools. So lets explore them.
-
-<a id="student"></a>
-
-### 👨‍🎓 Student 
-
-#### Student Classroom
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/student%20classroom.png?raw=true)
-
-#### Joining a Class
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/student%20join%20class.png?raw=true)
-
-#### Viewing assignment within a class
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/student%20inside%20class.png?raw=true)
-
-#### Submitting Assignment
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/student%20submit%20assignment.png?raw=true)
-
-#### To Do List
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/student%20to%20do.png?raw=true)
-
-#### Requesting Teacher Access
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/student%20teaching%20access.png?raw=true)
-
-<a id="teacher"></a>
-
-### 👩‍🏫 Teacher 
-
-#### Teacher Classroom
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/teacher%20dashboard.png?raw=true)
-
-#### Create Class
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/teacher%20create%20class.png?raw=true)
-
-#### Viewing assignment within a class
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/teacher%20within%20class.png?raw=true)
-
-#### Creating assignments or study materials
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/teacher%20create%20assignment.png?raw=true)
-
-- Specify the title, add an optional description, add day of submision and an optional attachment.
-- Check the Pin item checkbox to Pin item to start
-- Check the Resource checkbox to create a resource and not an assignment
-
-#### Viewing submitted assignments 
-![](https://github.com/saksham117/digitalBoard/blob/main/Screenshots/teacher%20view%20submissions.png?raw=true)
+![](https://github.com/saksham117/amazon-clone/blob/main/Screenshots/landing_page.png)
 
 
-<a id="getting-started"></a>
+### Product Catalog
+![](https://github.com/saksham117/amazon-clone/blob/main/Screenshots/product_catalog.png)
 
-## 📦 Getting Started
 
-- Fork this repository and clone it in your local environment.
-- Create a virtual environment and install relevant packages.
-  
-  - Go to the desired directory and run the following command in Commmand Prompt:
+### Login
+![](https://github.com/saksham117/amazon-clone/blob/main/Screenshots/login_page.png)
 
-  ```bash
-  pip install virtualenv
-  mkdir python-virtual-environments && cd python-virtual-environments
-  python3 -m venv name_of_venv
-  name_of_venv\Scripts\activate
-  pip -r requirements.txt
-  ```
 
-  - Here the folder python-virtual-environments contains your virtual environment. Ideally place this folder in a central location like C:\Users\username. This will then maintain all your virtual environments.
-  - name_of_venv can be any thing which you want to set as the name of your virtual environment.
-  - Activate that environment and install requirements.txt
-  - Then navigate back to the directory where you cloned this repo
-  
-  
-- Go to web/settings.py and make the following changes in these lines of code.
+### Basket
+![](https://github.com/saksham117/amazon-clone/blob/main/Screenshots/basket.png)
 
-  ```python
-  DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-    }
-  }
-  ```
 
-  - In NAME field specify the name of the database (create one, if not already present).
-  - In user specify which user of MySQL you want to connet with and specify the password for that user.
+### Checkout
+![](https://github.com/saksham117/amazon-clone/blob/main/Screenshots/checkout.png)
 
-- You might also have to change the environment variables for setting AWS S3 bucket and email configuration. Follow these links to set environment variables:
-  -  [Windows](https://youtu.be/IolxqkL7cD8)
-  -  [MacOS/Linux](https://youtu.be/5iWhQWVXosU)
 
-- To set google authentication, follow this resource 
-  -  [Set up Google Authentication](https://www.section.io/engineering-education/django-google-oauth/)
 
-- Now after having the virtual environment activated, run the command:
-  ```python
-   python manage.py runserver
-  ```
 
-- To create a superuser to access admin portal, write the following commands:
-  ```python
-   python manage.py createsuperuser
-  ```
-
-<a id="final-comments"></a>
-## 🙏 Final Comments
-
-- While implementing the project, it was ensured that the best practices of agile methodolgy were followed.
-- The front end part is not completely my contribution. I have taken help from resources like CodePen
-- While loggin in, you sometimes might get this error **Error 400: redirect_uri_mismatch** . This happens as Heroku and Google OAuth are not always able to communicate. Just go back and try to log in again. The error will disappear.
   
 <a id="bug"></a>
 
 ## 🐛 Bug Reporting
 
-Feel free to [open an issue](https://github.com/saksham117/digitalBoard/issues) on GitHub if you find any bug.
+Feel free to [open an issue](https://github.com/saksham117/amazon-clone/issues) on GitHub if you find any bug.
 
 <a id="feature-request"></a>
 
 ## ⭐ Feature Request
 
-- Feel free to [Open an issue](https://github.com/saksham117/digitalBoard/issues) on GitHub to request any additional features you might need for your use case.
+- Feel free to [Open an issue](https://github.com/saksham117/amazon-clone/issues) on GitHub to request any additional features you might need for your use case.
 - Connect with me on [LinkedIn](https://www.linkedin.com/in/saksham-basandrai117/). I'd love ❤️️ to hear from you.
   
   
