@@ -1,6 +1,3 @@
-# 18103048_Software_Testing
-
-
 # Amazon-Clone
 My attempt towards developing a full stack clone of the Amazon App using React.js, with the site being deployed using FireBase and using FireStore as the database.
 
