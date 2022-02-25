@@ -12,12 +12,10 @@ Implemented complete payment functionality using Stripe.js and handled authentic
 ## Contents ##
 
 - [Key Points](#key-points)
+- [UML Diagrams](#uml)
 - [Walkthrough](#walkthrough)
 - [Bug Reporting](#bug)
 - [Feature Request](#feature-request)
-
-
-
 
 
 <a id="key-points"></a>
@@ -32,6 +30,15 @@ Implemented complete payment functionality using Stripe.js and handled authentic
 - ### Past Order 📦
   - You can even see a list of all the items you have ordered in the past by simply clicking on the Past Orders tab.
 
+<a id="uml"></a>
+
+## 📝 UML Diagrams
+
+- ### Sequence Diagram
+![](https://github.com/saksham117/18103048_Software_Testing/blob/main/Assignment1_UML_Diagrams/18103048_Sequence_Diagram_Amazon_Clone.png)
+  
+- ### Use Case Diagram
+![](https://github.com/saksham117/18103048_Software_Testing/blob/main/Assignment1_UML_Diagrams/18103048_UseCase_Diagram_Amazon_Clone.png)
 
 
 <a id="walkthrough"></a>
