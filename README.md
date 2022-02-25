@@ -71,13 +71,13 @@ So lets take a look at our application.
 
 ## 🐛 Bug Reporting
 
-Feel free to [open an issue](https://github.com/saksham117/amazon-clone/issues) on GitHub if you find any bug.
+Feel free to [open an issue](https://github.com/saksham117/18103048_Software_Testing/issues) on GitHub if you find any bug.
 
 <a id="feature-request"></a>
 
 ## ⭐ Feature Request
 
-- Feel free to [Open an issue](https://github.com/saksham117/amazon-clone/issues) on GitHub to request any additional features you might need for your use case.
+- Feel free to [Open an issue](https://github.com/saksham117/18103048_Software_Testing/issues) on GitHub to request any additional features you might need for your use case.
 - Connect with me on [LinkedIn](https://www.linkedin.com/in/saksham-basandrai117/). I'd love ❤️️ to hear from you.
   
   
