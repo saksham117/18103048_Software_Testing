@@ -32,10 +32,10 @@ Implemented complete payment functionality using Stripe.js and handled authentic
 ## 📝 UML Diagrams
 
 - ### Sequence Diagram
-![](https://github.com/saksham117/18103048_Software_Testing/blob/main/Assignment1_UML_Diagrams/18103048_Sequence_Diagram_Amazon_Clone.png)
+![](https://github.com/saksham117/18103048_Software_Testing/blob/main/Assignment_1_UML_Diagrams/18103048_Sequence_Diagram_Amazon_Clone.png)
   
 - ### Use Case Diagram
-![](https://github.com/saksham117/18103048_Software_Testing/blob/main/Assignment1_UML_Diagrams/18103048_UseCase_Diagram_Amazon_Clone.png)
+![](https://github.com/saksham117/18103048_Software_Testing/blob/main/Assignment_1_UML_Diagrams/18103048_UseCase_Diagram_Amazon_Clone.png)
 
 
 <a id="walkthrough"></a>
